@@ -1,4 +1,66 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
+:root {
+  /* Размеры страницы */
+  --mobile-width: 375px;
+  --mobile-height: 668px;
+  --tablet-width: 768px;
+  --tablet-height: 1024px;
+  --desktop-width: 1024px;
+  --desktop-height: 768px;
+  --min-width: var(--mobile-width);
+  --min-height: var(--mobile-height);
+  --max-width: var(--mobile-width);
+  --max-height: var(--mobile-height);
+
+  /* Цветовая схема */
+  --background-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --text-section-title-color: #ff0070;
+
+  /* Типографика */
+  --main-font: 'IBM Plex Mono', monospace;
+  --text-size: 18px;
+  --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  --section-title-size: 18px;
+
+  /* Отступы */
+  --inline-padding: 10px;
+  --block-padding: 10px;
+  --block-spacing: 50px;
+  --item-spacing: 10px;
+  --menu-spacing: 8px;
+  --section-block-end-spacing: 50px;
+  --section-children-spacing: 20px;
+  --section-content-children-spacing: 20px;
+
+  /* Изображения */
+  --header-background-dark: url(../images/cover-image-dark.png);
+  --header-background-light: url(../images/cover-image-light.png);
+}
+
+@media (width >= 768px) {
+  :root {
+    --inline-padding: 20px;
+    --block-padding: 20px;
+    --block-spacing: 80px;
+    --item-spacing: 20px;
+    --section-block-end-spacing: 80px;
+  }
+}
+
+@media (width >= 768px) and (width < 1024px) {
+  :root {
+    --max-width: var(--tablet-width);
+    --max-height: var(--tablet-height);
+    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
+
+@media (width >= 1024px) {
+  :root {
+    --max-width: var(--desktop-width);
+    --max-height: var(--desktop-height);
+    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+}
