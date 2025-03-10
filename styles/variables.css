@@ -50,5 +50,20 @@
     --block-padding: 20px;
     --block-spacing: 80px;
     --item-spacing: 20px;
+    --max-width: var(--tablet-height);
+    --max-height: var(--tablet-height);
+    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --inline-padding: 20px;
+    --block-padding: 20px;
+    --block-spacing: 80px;
+    --item-spacing: 20px;
+    --max-width: var(--desktop-width);
+    --max-height: var(--desktop-height);
+    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
   }
 }
