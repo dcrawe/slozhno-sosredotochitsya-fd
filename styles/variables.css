@@ -31,7 +31,7 @@
   --block-padding: 10px;
   --block-spacing: 50px;
   --item-spacing: 10px;
-  --menu-spacing: 10px;
+  --menu-spacing: 8px;
   --section-block-start-spacing: 47px;
   --section-block-end-spacing: 80px;
   --section-children-spacing: 20px;
@@ -45,15 +45,16 @@
   --header-background-light: url(../images/cover-image-light.png);
 }
 
-@media (min-width: 768px) {
+@media (width >= 768px) {
   :root {
     --inline-padding: 20px;
     --block-padding: 20px;
     --block-spacing: 80px;
     --item-spacing: 20px;
-    --max-width: var(--tablet-height);
+    --max-width: var(--tablet-width);
     --max-height: var(--tablet-height);
-    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --header-message-spacing-start: 35px;
   }
 }
 
@@ -65,6 +66,7 @@
     --item-spacing: 20px;
     --max-width: var(--desktop-width);
     --max-height: var(--desktop-height);
-    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --header-message-spacing-start: 43px;
   }
 }
