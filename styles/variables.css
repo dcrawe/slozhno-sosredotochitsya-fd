@@ -31,9 +31,10 @@
   --block-padding: 10px;
   --block-spacing: 50px;
   --item-spacing: 10px;
+  --menu-spacing: 10px;
   --section-block-start-spacing: 47px;
-  --section-block-end-spacing: 72px;
-  --section-children-spacing: 14px;
+  --section-block-end-spacing: 80px;
+  --section-children-spacing: 20px;
   --theme-menu-spacing-start: 39px;
   --theme-menu-spacing-end: 65px;
   --header-message-spacing-start: 43px;
