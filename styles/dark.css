@@ -4,32 +4,9 @@
   --accent-color: #ff0070;
   --title-color: #db00ff;
   --text-section-title-color: #ff0070;
-}
-
-:root.theme-dark {
-  --background-color: #000028;
-  --text-color: #f1b2ce;
-  --accent-color: #ff0070;
-  --title-color: #db00ff;
-  --text-section-title-color: #ff0070;
   --header-background: var(--header-background-dark);
 }
 
 .theme_dark .header__rec-indicator {
   display: block;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #000028;
-    --text-color: #f1b2ce;
-    --accent-color: #ff0070;
-    --title-color: #db00ff;
-    --text-section-title-color: #ff0070;
-    --header-background: var(--header-background-dark);
-  }
-
-  .header__rec-indicator {
-    display: block;
-  }
 }
