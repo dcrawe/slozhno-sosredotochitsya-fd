@@ -154,20 +154,15 @@
   align-items: start;
 }
 
-.article {
+.article,
+.advice-block {
   display: grid;
   gap: 10px;
   align-items: start;
 }
 
-.sub-section > .article {
+.article_advice {
   gap: 20px;
-}
-
-.sub-article {
-  display: grid;
-  gap: 10px;
-  align-items: start;
 }
 
 .section__article-title,
