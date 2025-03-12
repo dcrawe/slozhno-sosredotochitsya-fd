@@ -7,6 +7,11 @@
   font-family: var(--main-font), serif;
   font-size: var(--text-size);
   max-width: var(--max-width);
+  background-image: var(--header-background);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .decorated-zone {
@@ -37,25 +42,22 @@
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto 1fr 1fr auto;
+  grid-template-rows: 1fr min-content 1fr;
   padding: var(--block-padding);
   align-items: start;
   justify-items: start;
-  background-image: var(--header-background);
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-block-size: var(--max-height);
+  min-block-size: 100vh;
 }
 
 .header__rec-indicator {
-  position: relative;
+  position: absolute;
   justify-self: end;
   color: var(--accent-color);
   line-height: calc(var(--text-size) * 1.40);
   padding-inline-end: 27px;
   grid-column: 2;
+  inset-inline-end: var(--inline-padding);
+  inset-block-start: var(--block-padding);
 }
 
 .header__rec-indicator::after {
@@ -74,10 +76,7 @@
 
 .header__theme-menu {
   justify-self: end;
-  align-self: start;
-  margin-block: var(--theme-menu-spacing-start) var(--theme-menu-spacing-end);
-  grid-column: 2;
-  grid-row: 2;
+  align-self: center;
 }
 
 .header__theme-menu-list {
@@ -117,26 +116,15 @@
   justify-self: start;
   line-height: 0.83;
   font-weight: 700;
-  grid-column: 1 / -1;
-}
-
-.footer__title {
-  font-size: var(--title-size);
-  color: var(--title-color);
-  text-shadow: 4px 4px 0 var(--accent-color);
-  align-self: center;
-  line-height: 0.96;
-  font-weight: 700;
-  grid-column: 1 / -1;
+  grid-row: 2;
 }
 
 .header__text {
-  align-self: end;
-  margin-block: var(--header-message-spacing-start) var(--header-message-spacing-end);
+  align-self: center;
   background-color: var(--accent-color);
   color: var(--background-color);
   font-weight: 700;
-  grid-column: 1 / -1;
+  grid-row: 3;
 }
 
 .main {
@@ -230,6 +218,16 @@
   padding: var(--block-padding);
   min-block-size: var(--max-height);
   margin-block-start: 30px;
+}
+
+.footer__title {
+  font-size: var(--title-size);
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  align-self: center;
+  line-height: 0.96;
+  font-weight: 700;
+  grid-column: 1 / -1;
 }
 
 .link {
