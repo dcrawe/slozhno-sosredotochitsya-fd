@@ -11,6 +11,13 @@
   --max-width: var(--mobile-width);
   --max-height: var(--mobile-height);
 
+  /* Цветовая схема */
+  --background-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --title-color: #db00ff;
+  --text-section-title-color: #ff0070;
+
   /* Типографика */
   --main-font: 'IBM Plex Mono', monospace;
   --text-size: 18px;
