@@ -1,10 +1,10 @@
 :root {
-  --background-color: #000028;
-  --text-color: #f1b2ce;
   --accent-color: #ff0070;
-  --title-color: #db00ff;
-  --text-section-title-color: #ff0070;
+  --background-color: #000028;
   --header-background: var(--header-background-dark);
+  --text-color: #f1b2ce;
+  --text-section-title-color: #ff0070;
+  --title-color: #db00ff;
 }
 
 .theme_dark .header__rec-indicator {
