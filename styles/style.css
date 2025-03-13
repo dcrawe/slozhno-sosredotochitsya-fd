@@ -359,6 +359,6 @@
   }
 
   .section_vertical {
-    --section-children-spacing: 40px;
+    --section-children-spacing: 20px;
   }
 }
