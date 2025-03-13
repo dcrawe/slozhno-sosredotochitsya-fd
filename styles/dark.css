@@ -6,7 +6,3 @@
   --text-section-title-color: #ff0070;
   --title-color: #db00ff;
 }
-
-.theme_dark .header__rec-indicator {
-  display: block;
-}
