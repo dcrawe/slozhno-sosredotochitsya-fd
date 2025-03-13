@@ -6,6 +6,8 @@
   --tablet-height: 1024px;
   --desktop-width: 1024px;
   --desktop-height: 768px;
+  --min-width: var(--mobile-width);
+  --min-height: var(--mobile-height);
   --max-width: var(--mobile-width);
   --max-height: var(--mobile-height);
 

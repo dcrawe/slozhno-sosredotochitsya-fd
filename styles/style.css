@@ -3,6 +3,8 @@
   color: var(--text-color);
   font-family: var(--main-font), serif;
   font-size: var(--text-size);
+  min-width: calc(var(--min-width) - var(--block-padding));
+  min-height: var(--min-height);
   max-width: var(--max-width);
   background-image: var(--header-background);
   background-size: auto 100%;
@@ -43,7 +45,7 @@
   padding: var(--block-padding);
   align-items: start;
   justify-items: start;
-  min-block-size: 100vh;
+  min-block-size: max(var(--min-height), 100vh);
 }
 
 .header__rec-indicator {
@@ -205,7 +207,7 @@
   display: grid;
   place-items: center;
   padding: var(--block-padding);
-  min-block-size: 100vh;
+  min-block-size: max(var(--min-height), 100vh);
   margin-block-start: 30px;
 }
 
