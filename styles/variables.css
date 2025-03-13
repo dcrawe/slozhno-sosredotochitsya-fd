@@ -1,7 +1,3 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
   /* Размеры страницы */
   --mobile-width: 375px;
@@ -12,13 +8,6 @@
   --desktop-height: 768px;
   --max-width: var(--mobile-width);
   --max-height: var(--mobile-height);
-
-  /* Цветовая схема */
-  --background-color: #000028;
-  --text-color: #f1b2ce;
-  --accent-color: #ff0070;
-  --title-color: #db00ff;
-  --text-section-title-color: #ff0070;
 
   /* Типографика */
   --main-font: 'IBM Plex Mono', monospace;
@@ -32,14 +21,9 @@
   --block-spacing: 50px;
   --item-spacing: 10px;
   --menu-spacing: 8px;
-  --section-block-start-spacing: 47px;
   --section-block-end-spacing: 50px;
   --section-children-spacing: 20px;
   --section-content-children-spacing: 20px;
-  --theme-menu-spacing-start: 39px;
-  --theme-menu-spacing-end: 60px;
-  --header-message-spacing-start: 43px;
-  --header-message-spacing-end: 56px;
 
   /* Изображения */
   --header-background-dark: url(../images/cover-image-dark.png);
@@ -53,7 +37,6 @@
     --block-spacing: 80px;
     --item-spacing: 20px;
     --section-block-end-spacing: 80px;
-    --theme-menu-spacing-end: 65px;
   }
 }
 
@@ -62,7 +45,7 @@
     --max-width: var(--tablet-width);
     --max-height: var(--tablet-height);
     --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --header-message-spacing-start: 35px;
+    --section-children-spacing: 40px;
   }
 }
 
@@ -71,6 +54,5 @@
     --max-width: var(--desktop-width);
     --max-height: var(--desktop-height);
     --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    --header-message-spacing-start: 43px;
   }
 }

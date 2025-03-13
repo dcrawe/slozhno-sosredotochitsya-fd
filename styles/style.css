@@ -1,7 +1,4 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: var(--main-font), serif;
@@ -127,7 +124,7 @@
 .main {
   display: grid;
   gap: var(--section-block-end-spacing);
-  padding: 40px var(--inline-padding) var(--inline-padding);
+  padding: 40px var(--inline-padding) var(--block-padding);
   align-items: start;
 }
 
@@ -288,7 +285,6 @@
   }
 
   .section_vertical {
-    --section-children-spacing: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
@@ -298,7 +294,7 @@
   }
 
   .main {
-    padding: 60px var(--inline-padding) var(--inline-padding);
+    padding: 60px var(--inline-padding) var(--block-padding);
   }
 
   .section__related {
@@ -356,10 +352,6 @@
   }
 
   .main {
-    padding: 60px var(--inline-padding) var(--inline-padding);
-  }
-
-  .section_vertical {
-    --section-children-spacing: 20px;
+    padding: 60px var(--inline-padding) var(--block-padding);
   }
 }
