@@ -5,4 +5,7 @@
   --text-color: #f1b2ce;
   --text-section-title-color: #ff0070;
   --title-color: #db00ff;
+  --corner-color: var(--accent-color);
+  --indicator-display: inline-block;
+  --active-button-color: var(--accent-color);
 }

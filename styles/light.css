@@ -5,15 +5,21 @@
   --text-color: #353430;
   --text-section-title-color: #353430;
   --title-color: #ffc2e6;
+  --corner-color: var(--text-color);
+  --indicator-display: none;
+  --active-button-color: var(--text-color);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #ff8dcb;
-    --background-color: #ffffff;
+    --background-color: #ffeff6;
     --header-background: var(--header-background-light);
     --text-color: #353430;
     --text-section-title-color: #353430;
     --title-color: #ffc2e6;
+    --corner-color: var(--text-color);
+    --indicator-display: none;
+    --active-button-color: var(--text-color);
   }
 }
